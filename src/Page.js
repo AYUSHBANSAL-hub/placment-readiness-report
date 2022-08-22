@@ -72,7 +72,14 @@ const Page = ({ data }) => {
         </div>
         <div style={{ display: "flex", justifyContent: "space-around" }}>
           <AttemptAnalysis Correct={data.Correct} Incorrect={data.Incorrect} />
-          <AreasToImprove />
+          <AreasToImprove
+            FrontEnd_and_BackEnd_Percentile={
+              data.FrontEnd_and_BackEnd_Percentile
+            }
+            Fundamental_Coding_Percentile={data.Fundamental_Coding_Percentile}
+            MS_Excel_Percentile={data.MS_Excel_Percentile}
+            Aptitude_Percentile={data.Aptitude_Percentile}
+          />
         </div>
         {/* <div>
             <p className="heading-5">Your preparation for variours roles</p>

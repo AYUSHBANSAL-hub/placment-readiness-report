@@ -22,7 +22,12 @@ ChartJS.register(
   Legend
 );
 
-const AreasToImprove = () => {
+const AreasToImprove = ({
+  FrontEnd_and_BackEnd_Percentile,
+  Fundamental_Coding_Percentile,
+  MS_Excel_Percentile,
+  Aptitude_Percentile,
+}) => {
   const labels = ["Jan", "Feb", "Mar", "Apr"];
 
   const data = {
@@ -31,7 +36,12 @@ const AreasToImprove = () => {
       {
         barPercentage: 1,
         label: "",
-        data: [10, 12, 20, 20],
+        data: [
+          FrontEnd_and_BackEnd_Percentile,
+          Fundamental_Coding_Percentile,
+          MS_Excel_Percentile,
+          Aptitude_Percentile,
+        ],
         minBarLength: 2,
         backgroundColor: [
           "rgb(34,183,157)",
