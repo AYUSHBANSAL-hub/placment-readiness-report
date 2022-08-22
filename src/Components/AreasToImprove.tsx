@@ -42,7 +42,7 @@ const AreasToImprove = ({
           MS_Excel_Percentile,
           Aptitude_Percentile,
         ],
-        minBarLength: 2,
+        minBarLength: 0,
         backgroundColor: [
           "rgb(34,183,157)",
           "rgb(234,168,242)",
