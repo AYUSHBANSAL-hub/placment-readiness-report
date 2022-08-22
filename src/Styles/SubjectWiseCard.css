@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.subject{
+    margin-top: -100px;
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 10.4253px;
+line-height: 16px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #0A0B26;
+
+}
+
+.percentile-score-text{
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 7.819px;
+line-height: 12px;
+/* identical to box height */
+
+text-align: center;
+
+color: #0A0B26;
+
+opacity: 0.5;
+}
+
+.percentile-score{
+    font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 7.819px;
+line-height: 12px;
+/* identical to box height */
+padding-top: 26px;
+margin-left: -25px;
+text-align: center;
+
+color: #00AF91;
+}

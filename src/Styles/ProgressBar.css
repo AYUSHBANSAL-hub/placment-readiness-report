@@ -1,0 +1,23 @@
+@import url("https://use.typekit.net/zfk5qvf.css");
+
+#role-name{
+    font-family: nunito-sans,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.2414px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #0C1E5B;
+    margin-top: 20px;
+}
+
+#role-readyness{
+    margin-top: 10px;
+    font-family: nunito-sans,sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #0C1E5B;
+}

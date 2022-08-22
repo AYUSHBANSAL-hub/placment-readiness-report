@@ -1,0 +1,23 @@
+/** @format */
+
+@import url("https://use.typekit.net/zfk5qvf.css");
+
+.areas-to-improve-card {
+  margin-top: 50px;
+  padding: 20px;
+  width: 204px;
+  height: 214px;
+  background: #ffffff;
+  border: 0.81181px solid #e5e7ed;
+  border-radius: 16.2362px;
+}
+
+#heading-4 {
+  font-family: nunito-sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17.4479px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #0c1e5b;
+}

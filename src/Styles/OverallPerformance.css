@@ -1,0 +1,102 @@
+@import url("https://use.typekit.net/zfk5qvf.css");
+
+.TotalPercentile{
+    width: 256.26px;
+height: 274.41px;
+    box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 18.0839px;
+gap: 18.08px;
+background: #FFFFFF;
+border: 0.989543px solid rgba(214, 214, 214, 0.8);
+border-radius: 17.607px;
+}
+.OverallHeading{
+    font-family: nunito-sans,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19.15px;
+    color: #0C1E5B;
+
+}
+.TotalPercentileCard-1{
+    width: 220.09px;
+    height: 88.04px;
+    background: linear-gradient(90deg, #012555 0%, #003A8C 100%);
+    border: 0.880352px solid #E5E7ED;
+    border-radius: 8.80352px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.TotalPercentileCard-1>div>h3{
+width: 130px;
+height: 16px;
+font-family: nunito-sans,sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+
+opacity: 0.9;
+}
+
+.TotalPercentileCard-1>div>h2{
+    width: 59px;
+    height: 22px;
+    font-family: nunito-sans,sans-serif;
+font-weight: 700;
+font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #F7CF5F;
+    padding-top: 6px;
+}
+.Progress-circular{
+    width: 30%;
+}
+
+.TotalPercentileCard-2{
+    width: 220.09px;
+    height: 88.04px;
+    background: linear-gradient(90deg, #003A8C 0%, #2F80ED 100%);
+border: 0.880352px solid #E5E7ED;
+border-radius: 8.80352px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.TotalPercentileCard-2>div>h3{
+width: 130px;
+height: 14px;
+font-family: nunito-sans,sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+opacity: 0.9;
+}
+
+.TotalPercentileCard-2>div>h2{
+    width: 59px;
+    height: 22px;
+    font-family: nunito-sans,sans-serif;
+font-weight: 700;
+font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding-top: 6px;
+}
