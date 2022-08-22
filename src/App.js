@@ -12,7 +12,7 @@ import ReactDOMServer from "react-dom/server";
 // import AttemptAnalysis from "./Components/AttemptAnalysis.tsx";
 // import AreasToImprove from "./Components/AreasToImprove.tsx";
 import Page from "./Page.js";
-import { mailsToAll } from "./mail_script";
+// import { mailsToAll } from "./mail_script";
 //import Pdf from "react-to-pdf";
 //import html2canvas from "html2canvas";
 //import { jsPDF } from "jspdf";
@@ -52,9 +52,9 @@ const App = ({ data }) => {
   const componentRef = useRef();
   // mailsToAll();
 
-  const mail = () => {
-    mailsToAll();
-  };
+  // const mail = () => {
+  //   mailsToAll();
+  // };
 
   return (
     <div className="App">
@@ -65,7 +65,7 @@ const App = ({ data }) => {
       {/* <button type="button" onClick={save}>
         Download as PDF
       </button> */}
-      <button onClick={mail}>Send Mail</button>
+      {/* <button onClick={mail}>Send Mail</button> */}
       <button
         onClick={() => exportComponentAsPDF(componentRef, { pdfOptions })}
       >

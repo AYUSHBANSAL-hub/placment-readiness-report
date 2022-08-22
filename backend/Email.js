@@ -20,7 +20,12 @@ const sendEmail = async (email, subject, text, person) => {
       from: "hiteshmarwaha24@gmail.com",
       to: email,
       subject: subject,
-      text: text,
+      text: person_url,
+      html: `
+      <div>
+      <p>Here is the link ${person_url}</p>
+      </div>
+      `,
     };
 
     transporter.sendMail(mailOptions, (err, data) => {
