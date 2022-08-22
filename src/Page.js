@@ -29,7 +29,7 @@ const Page = ({ data }) => {
               <p id="rank">#{data.Rank}</p>
             </div>
             <img
-              style={{ marginTop: "-100px", zIndex: "-1", position: "static" }}
+              style={{ marginTop: "-120px", zIndex: "-1", position: "static" }}
               src={Rank}
               alt="Top Banner"
             />

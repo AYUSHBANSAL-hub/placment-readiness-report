@@ -4,6 +4,7 @@
 
 * {
   margin: 0px;
+  position: relative;
 }
 .App {
   position: absolute;
@@ -19,13 +20,14 @@
 }
 #rank {
   padding-top: 100px;
-  z-index: 10 !important;
+  z-index: 1;
+  width: fit-content;
   font-family: nunito-sans, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   color: #0c1e5b;
-  padding-left: 100px;
+  padding-left: 150px;
 }
 .greeting {
   font-family: nunito-sans, sans-serif;
