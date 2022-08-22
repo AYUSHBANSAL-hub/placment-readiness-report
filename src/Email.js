@@ -1,10 +1,14 @@
 /** @format */
 
-const nodemailer = require("nodemailer");
+import { createTransport } from "nodemailer";
 
-const sendEmail = async (email, subject, text) => {
+const sendEmail = async (email, subject, text, person) => {
+  const person_url =
+    person.Name.split(" ")[0] + "_" + person.Name.split(" ")[1];
+
+  console.log(person_url);
   try {
-    let transporter = nodemailer.createTransport({
+    let transporter = createTransport({
       service: "gmail",
       auth: {
         user: "hiteshmarwaha24@gmail.com",
@@ -17,12 +21,9 @@ const sendEmail = async (email, subject, text) => {
       to: email,
       subject: subject,
       text: text,
-      // attachments: [
-      //     { filename: 'images/profile.JPG', path: './images/profile.JPG' }
-      // ]
     };
 
-    await transporter.sendMail(mailOptions, (err, data) => {
+    transporter.sendMail(mailOptions, (err, data) => {
       if (err) {
         console.log(err);
       }
@@ -32,18 +33,6 @@ const sendEmail = async (email, subject, text) => {
     console.log("email not sent");
     console.log(error);
   }
-
-  //   await transporter.sendMail({
-  //     from: process.env.USER,
-  //     to: email,
-  //     subject: subject,
-  //     text: text,
-  //   });
-  //   console.log("email sent sucessfully");
-  // } catch (error) {
-  //   console.log("email not sent");
-  //   console.log(error);
-  // }
 };
 
-module.exports = sendEmail;
+export default sendEmail;

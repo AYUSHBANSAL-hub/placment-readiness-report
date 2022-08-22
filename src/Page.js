@@ -1,13 +1,13 @@
 /** @format */
 
 import React from "react";
-import OverallPerformance from "./Components/OverallPerformance.tsx";
+import OverallPerformance from "./Components/OverallPerformance.js";
 import TopBanner from "./Images/TopBanner.svg";
 import Rank from "./Images/Rank.svg";
-import SubjectWiseCard from "./Components/SubjectWiseCard.tsx";
+import SubjectWiseCard from "./Components/SubjectWiseCard.js";
 //import VariousRoles from "./Components/VariousRoles.tsx";
-import AttemptAnalysis from "./Components/AttemptAnalysis.tsx";
-import AreasToImprove from "./Components/AreasToImprove.tsx";
+import AttemptAnalysis from "./Components/AttemptAnalysis.js";
+import AreasToImprove from "./Components/AreasToImprove.js";
 
 const Page = ({ data }) => {
   return (

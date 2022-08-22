@@ -13,14 +13,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  BarElement,
-  Title,
-  Tooltip,
-  Legend
-);
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip);
 
 const AreasToImprove = ({
   FrontEnd_and_BackEnd_Percentile,
@@ -51,11 +44,23 @@ const AreasToImprove = ({
         ],
       },
     ],
+    options: {
+      tooltips: {
+        enabled: false,
+      },
+      legend: {
+        display: false,
+      },
+      scales: {
+        xAxes: [{ display: false }],
+        yAxes: [{ display: false }],
+      },
+    },
   };
   return (
     <div className="areas-to-improve-card">
       <p id="heading-4">Areas To Improve</p>
-      <Bar data={data} />
+      <Bar data={data} height={"100%"} width={"100%"} />
     </div>
   );
 };
