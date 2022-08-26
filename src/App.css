@@ -9,8 +9,8 @@
 .App {
   position: absolute;
   width: 595px;
-  display: block;
-  margin: auto;
+  margin-left: 25%;
+  border: 1px solid #ebebeb;
 }
 .overview-rank {
   padding-top: 20px;

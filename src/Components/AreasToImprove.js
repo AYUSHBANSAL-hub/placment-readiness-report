@@ -21,7 +21,7 @@ const AreasToImprove = ({
   MS_Excel_Percentile,
   Aptitude_Percentile,
 }) => {
-  const labels = ["Jan", "Feb", "Mar", "Apr"];
+  const labels = ["Coding", "Fundamentals", "MS Excel", "Aptitude"];
 
   const data = {
     labels,
@@ -45,15 +45,10 @@ const AreasToImprove = ({
       },
     ],
     options: {
-      tooltips: {
-        enabled: false,
-      },
-      legend: {
-        display: false,
-      },
-      scales: {
-        xAxes: [{ display: false }],
-        yAxes: [{ display: false }],
+      plugins: {
+        legend: {
+          display: false,
+        },
       },
     },
   };

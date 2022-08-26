@@ -1,7 +1,9 @@
+/** @format */
+
 const studentDetails = [
   {
     Name: "Ayush Bansal",
-    Email: "ayush@acciojob.com",
+    Email: "mightyayush9@gmail.com",
     Contact: 918780113620,
     Rank: 1,
     Total_Score: 116,

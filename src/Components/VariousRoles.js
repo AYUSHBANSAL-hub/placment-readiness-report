@@ -1,11 +1,21 @@
+/** @format */
+
 import React from "react";
 import ProgressBar from "./ProgressBar.js";
-const VariousRoles = () => {
+const VariousRoles = ({
+  Full_Stack_Web_Developer,
+  Frontend_Developer,
+  Backend_Developer,
+  Business_Analyst,
+  Data_Analyst,
+  Others,
+}) => {
   function color(percentage) {
     if (percentage < 33) return "#C0352C";
     else if (percentage < 66) return "#E2B645";
     else return "#1C9127";
   }
+
   return (
     <div
       style={{
@@ -16,65 +26,41 @@ const VariousRoles = () => {
     >
       <div>
         <ProgressBar
-          role="SDE (Software Development Engineer)"
-          bgcolor={color(10)}
-          progress="10"
+          role="Full_Stack_Web_Developer"
+          bgcolor={color(Full_Stack_Web_Developer)}
+          progress={Full_Stack_Web_Developer}
           height="6px"
         />
         <ProgressBar
-          role="Backend Engineer"
-          bgcolor={color(60)}
-          progress="60"
+          role="Frontend_Developer"
+          bgcolor={color(Frontend_Developer)}
+          progress={Frontend_Developer}
           height="6px"
         />
         <ProgressBar
-          role="QA or SDET (SDE at Test)"
-          bgcolor={color(40)}
-          progress="40"
-          height="6px"
-        />
-        <ProgressBar
-          role="Data Analyst"
-          bgcolor={color(50)}
-          progress="50"
-          height="6px"
-        />
-        <ProgressBar
-          role="Entrepreneur"
-          bgcolor={color(15)}
-          progress="15"
+          role="Backend_Developer"
+          bgcolor={color(Backend_Developer)}
+          progress={Backend_Developer}
           height="6px"
         />
       </div>
       <div>
         <ProgressBar
-          role="Frontend Engineer"
-          bgcolor={color(85)}
-          progress="85"
+          role="Business_Analyst"
+          bgcolor={color(Business_Analyst)}
+          progress={Business_Analyst}
           height="6px"
         />
         <ProgressBar
-          role="Full Stack Developer "
-          bgcolor={color(70)}
-          progress="70"
-          height="6px"
-        />
-        <ProgressBar
-          role="Business Analyst or Consultant"
-          bgcolor={color(15)}
-          progress="15"
-          height="6px"
-        />
-        <ProgressBar
-          role="Non-IT Job"
-          bgcolor={color(40)}
-          progress="40"
+          role="Data_Analyst"
+          bgcolor={color(Data_Analyst)}
+          progress={Data_Analyst}
           height="6px"
         />
         <ProgressBar
           role="Others"
-          bgcolor={color(60)}
-          progress="60"
+          bgcolor={color(Others)}
+          progress={Others}
           height="6px"
         />
       </div>

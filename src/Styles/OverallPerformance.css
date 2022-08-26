@@ -1,102 +1,198 @@
+/** @format */
+
 @import url("https://use.typekit.net/zfk5qvf.css");
 
-.TotalPercentile{
-    width: 256.26px;
-height: 274.41px;
-    box-sizing: border-box;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 18.0839px;
-gap: 18.08px;
-background: #FFFFFF;
-border: 0.989543px solid rgba(214, 214, 214, 0.8);
-border-radius: 17.607px;
+.TotalPercentile {
+  width: 256.26px;
+  height: 274.41px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18.0839px;
+  gap: 18.08px;
+  background: #ffffff;
+  border: 0.989543px solid rgba(214, 214, 214, 0.8);
+  border-radius: 17.607px;
 }
-.OverallHeading{
-    font-family: nunito-sans,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 19.15px;
-    color: #0C1E5B;
-
+.OverallHeading {
+  font-family: nunito-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 19.15px;
+  color: #0c1e5b;
 }
-.TotalPercentileCard-1{
-    width: 220.09px;
-    height: 88.04px;
-    background: linear-gradient(90deg, #012555 0%, #003A8C 100%);
-    border: 0.880352px solid #E5E7ED;
-    border-radius: 8.80352px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.TotalPercentileCard-1>div>h3{
-width: 130px;
-height: 16px;
-font-family: nunito-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-
-opacity: 0.9;
+.TotalPercentileCard-1 {
+  width: 220.09px;
+  height: 88.04px;
+  background: linear-gradient(90deg, #012555 0%, #003a8c 100%);
+  border: 0.880352px solid #e5e7ed;
+  border-radius: 8.80352px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.TotalPercentileCard-1>div>h2{
-    width: 59px;
-    height: 22px;
-    font-family: nunito-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: #F7CF5F;
-    padding-top: 6px;
-}
-.Progress-circular{
-    width: 30%;
+.TotalPercentileCard-1 > div > h3 {
+  width: 130px;
+  height: 16px;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  opacity: 0.9;
 }
 
-.TotalPercentileCard-2{
-    width: 220.09px;
-    height: 88.04px;
-    background: linear-gradient(90deg, #003A8C 0%, #2F80ED 100%);
-border: 0.880352px solid #E5E7ED;
-border-radius: 8.80352px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.TotalPercentileCard-1 > div > h2 {
+  width: 59px;
+  height: 22px;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #f7cf5f;
+  padding-top: 6px;
+}
+.Progress-circular {
+  width: 30%;
 }
 
-.TotalPercentileCard-2>div>h3{
-width: 130px;
-height: 14px;
-font-family: nunito-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-
-color: #FFFFFF;
-
-opacity: 0.9;
+.TotalPercentileCard-2 {
+  width: 220.09px;
+  height: 88.04px;
+  background: linear-gradient(90deg, #003a8c 0%, #2f80ed 100%);
+  border: 0.880352px solid #e5e7ed;
+  border-radius: 8.80352px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.TotalPercentileCard-2>div>h2{
-    width: 59px;
-    height: 22px;
-    font-family: nunito-sans,sans-serif;
-font-weight: 700;
-font-style: normal;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-    padding-top: 6px;
+.TotalPercentileCard-2 > div > h3 {
+  width: 130px;
+  height: 14px;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  opacity: 0.9;
+}
+
+.TotalPercentileCard-2 > div > h2 {
+  width: 59px;
+  height: 22px;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding-top: 6px;
+}
+
+.circle-wrap {
+  /* background-color: rgba(255, 255, 255, 0.75); */
+  /* border-radius: 50%; */
+}
+
+.inner-value {
+  /* background-color:; */
+  color: white;
+  font-size: 12px;
+  background-color: #012555;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: nunito-sans, sans-serif;
+}
+.inner-value-2 {
+  /* background-color:; */
+  color: white;
+  font-size: 12px;
+  background-color: #1052ae;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: nunito-sans, sans-serif;
+}
+
+/*CSS CIRCLE*/
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+}
+
+.pie {
+  --p: 5;
+  --b: 7px;
+  --c: darkred;
+  --w: 70px;
+
+  width: var(--w);
+  height: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  margin: 5px;
+  place-content: center;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+}
+.pie:before,
+.pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b)
+      var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+  mask: radial-gradient(
+    farthest-side,
+    #0000 calc(99% - var(--b)),
+    #000 calc(100% - var(--b))
+  );
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg))
+    translateY(calc(50% - var(--w) / 2));
+}
+/* .animate {
+  animation: p 1s 0.5s both;
+} */
+@keyframes p {
+  from {
+    --p: 0;
+  }
 }

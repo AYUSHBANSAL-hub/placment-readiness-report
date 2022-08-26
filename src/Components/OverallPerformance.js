@@ -1,16 +1,16 @@
+/** @format */
+
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "../Styles/OverallPerformance.css";
 
 const OverallPerformance = (props) => {
-  const percentage = 75;
-  const percentage2 = 24;
   return (
     <div className="TotalPercentile">
       <h1 className="OverallHeading">Overall Performance</h1>
       <div className="TotalPercentileCard-1">
-        <div className="Progress-circular">
+        {/* <div className="Progress-circular">
           <CircularProgressbar
             value={props.Percentile}
             text={`${props.Percentile}%`}
@@ -20,6 +20,14 @@ const OverallPerformance = (props) => {
               trailColor: "#8093ae",
             })}
           />
+        </div> */}
+        <div className="circle-wrap">
+          <div
+            class="pie animate"
+            style={{ "--p": `${props.Percentile}`, "--c": "white" }}
+          >
+            <span className="inner-value">{props.Percentile}%</span>
+          </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <h3> Total Percentile</h3>
@@ -27,7 +35,7 @@ const OverallPerformance = (props) => {
         </div>
       </div>
       <div className="TotalPercentileCard-2">
-        <div className="Progress-circular">
+        {/* <div className="Progress-circular">
           <CircularProgressbar
             value={props.Average_Accuracy}
             text={`${props.Average_Accuracy}%`}
@@ -37,6 +45,14 @@ const OverallPerformance = (props) => {
               trailColor: "#85a5d2",
             })}
           />
+        </div> */}
+        <div className="circle-wrap">
+          <div
+            class="pie"
+            style={{ "--p": `${props.Average_Accuracy}`, "--c": "white" }}
+          >
+            <span className="inner-value-2">{props.Average_Accuracy}%</span>
+          </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <h3> Average Accuracy</h3>

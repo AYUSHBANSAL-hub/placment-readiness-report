@@ -5,7 +5,7 @@ import OverallPerformance from "./Components/OverallPerformance.js";
 import TopBanner from "./Images/TopBanner.svg";
 import Rank from "./Images/Rank.svg";
 import SubjectWiseCard from "./Components/SubjectWiseCard.js";
-//import VariousRoles from "./Components/VariousRoles.tsx";
+import VariousRoles from "./Components/VariousRoles.js";
 import AttemptAnalysis from "./Components/AttemptAnalysis.js";
 import AreasToImprove from "./Components/AreasToImprove.js";
 
@@ -81,19 +81,31 @@ const Page = ({ data }) => {
             Aptitude_Percentile={data.Aptitude_Percentile}
           />
         </div>
-        {/* <div>
-            <p className="heading-5">Your preparation for variours roles</p>
-            <VariousRoles />
-          </div> */}
-        <div
+        <div>
+          <p
+            className="heading-5"
+            style={{ marginBottom: "-30px", marginTop: "10px" }}
+          >
+            Your preparation for variours roles
+          </p>
+          <VariousRoles
+            Full_Stack_Web_Developer={data.Full_Stack_Web_Developer}
+            Frontend_Developer={data.Frontend_Developer}
+            Backend_Developer={data.Backend_Developer}
+            Business_Analyst={data.Business_Analyst}
+            Data_Analyst={data.Data_Analyst}
+            Others={data.Others}
+          />
+        </div>
+        {/* <div
           style={{
             backgroundColor: "#E5E7ED",
             height: "1px",
             marginTop: "20px",
             marginBottom: "20px",
           }}
-        ></div>
-        <p id="about-accio">
+        ></div> */}
+        {/* <p id="about-accio">
           <strong>AccioJob</strong> is an IIT Delhi alumni-led company that
           provides{" "}
           <strong>
@@ -109,7 +121,7 @@ const Page = ({ data }) => {
             Amazon, Walmart, VISA, BharatPe, Paytm, ThoughtWorks and 190+ more
             companies.
           </strong>
-        </p>
+        </p> */}
       </div>
     </div>
   );
