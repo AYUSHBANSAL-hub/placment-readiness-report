@@ -9,15 +9,16 @@ const sendEmail = async (email, subject, text, person) => {
   console.log(person_url);
   try {
     let transporter = createTransport({
-      service: "gmail",
+      host: "smtp.zeptomail.in",
+      port: 587,
       auth: {
-        user: "ayush@acciojob.com",
-        pass: "govinda@ayush",
+        user: "emailapikey",
+        pass: "PHtE6r0MS7zvjTR7+0cGtqS5Q8/wNIgo+e5jKgcS5NsUDfJRHk1drNwixjfiqkwtVfITEPCezI9qse7P5+3XLGe5NTxPWWqyqK3sx/VYSPOZsbq6x00UsVQef0fZXILsddZu1yDQutbbNA==",
       },
     });
 
     let mailOptions = {
-      from: "ayush@acciojob.com",
+      from: "harsh@acciojob.com",
       to: email,
       subject: `AccioJob: Here is your Placement Report ${person.Name}`,
       text: person_url,
@@ -32,7 +33,7 @@ const sendEmail = async (email, subject, text, person) => {
         <i>If you want to be an SDE in a top tech company, but don’t know where to start. AccioJob is the right place for you.</i><br/><br/>
         <i>AccioJob is an IIT Delhi alumni-led company that provides six month Pay after Placement Full Stack Web Dev course. During the course, candidates are trained on Data Structures and Algorithms, Full Stack Web Development and backend web development. Their students are already working at Amazon, Walmart, VISA, BharatPe, Paytm, ThoughtWorks and 190+ more companies.</i><br/><br/>
         <p>www.acciojob.com<br/><i>10th Floor, Paras Trinity, Sector 63, Gurgaon</i></p>
-        
+        <img src="https://iili.io/rQGeuj.md.png" />
       </div>
       `,
     };
